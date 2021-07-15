@@ -5,8 +5,15 @@ import java.util.Scanner;
 
 public class Main {
 
+		public static void main(string[] args){
+			Main m = new Main();
+			String[] numbers = m.importPhoneNumbers("src/main/resources/phonenumbers.txt");
+			List<PhoneNumber> phoneNumbers = numbers.toStream().map(n -> {
+				return parsePhoneNumber(n);
+			}).collect(toList());
+		}
+ 
     Main() {
-        
         
     }
 
