@@ -1,7 +1,8 @@
 package MockSystem
 
 public class LandlinePhoneNumber extends PhoneNumber {
-	public LandlinePhoneNumber(string raw) : super(raw) {
+	public LandlinePhoneNumber(string raw){
+		super(raw);
 	}
 	@override
 	public bool isValid = true;

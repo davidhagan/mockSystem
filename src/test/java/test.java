@@ -10,6 +10,9 @@ class TestPhoneNumbers {
 	public static void TestInternationalPhoneNumber(){
 		string input = "+61 3 5955 2332";
 	}
+	public static void TestInternationalMobilePhoneNumber(){
+		string input = "+61 423 495 332";
+	}
 	public static void TestInvalidPhoneNumber(){
 		string input = "345 3453";
 	}
