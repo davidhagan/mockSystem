@@ -1,6 +1,6 @@
 package mockSystem
 
-public class PhoneNumber {
+public abstract class PhoneNumber {
 	protected string original;
 	public PhoneNumber(string raw){
 		original = raw;
@@ -8,4 +8,6 @@ public class PhoneNumber {
 	public string getOriginal() = {
 		return original;
 	}
+	bool isValid;
+	bool isSmsAble;
 }
