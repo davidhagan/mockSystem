@@ -13,13 +13,14 @@ public class Main {
     public String[] importPhoneNumbers(String fileName) {
         String[] phoneNumbers;
         
-        File phoneNumbersFile = new File("phoneNumbers.txt");
+        File phoneNumbersFile = new File(fileName);
         Scanner sc = new Scanner(phoneNumbersFile);
         while (sc.hasNextLine()) {
             String data = sc.nextLine();
             phoneNumbers.append(data);
         }
 
+        return phoneNumbers;
     }
 
 
